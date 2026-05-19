@@ -3,9 +3,9 @@ package com.pluralsight.loops;
 public class Person {
     private String firstName;
     private String lastName;
-    private int age;
+    private double age;
 
-    public Person(String firstName, String lastName, int age) {
+    public Person(String firstName, String lastName, double age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -27,11 +27,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public double getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(double age) {
         this.age = age;
     }
 

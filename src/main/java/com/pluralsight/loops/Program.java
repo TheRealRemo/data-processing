@@ -30,5 +30,11 @@ public class Program {
         for (Person match : nameMatch) {
             System.out.println(match);
         }
+        double totalAge = 0;
+        for (Person person : people) {
+            totalAge += person.getAge();
+        }
+        double averageAge = totalAge / 10;
+        System.out.println("The average age of the people is: " + averageAge);
     }
 }
