@@ -1,6 +1,7 @@
 package com.pluralsight.loops;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -36,5 +37,17 @@ public class Program {
         }
         double averageAge = totalAge / 10;
         System.out.println("The average age of the people is: " + averageAge);
+        ArrayList<Double> ages = new ArrayList<>();
+        for (Person person : people) {
+            ages.add(person.getAge());
+        }
+        double highestAge = Collections.max(ages);
+
+        System.out.println("The highest age is: " + highestAge);
+
+        double highestAge = Collections.max(ages);
+
+        System.out.println("The highest age is: " + highestAge);
+
     }
 }
